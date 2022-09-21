@@ -26,6 +26,50 @@
         color: #f004f0;
         margin-bottom: 200px;
     }
+    .Contact
+    {
+        font-size: 20px;
+        font-weight: 500;
+        color: #f00;
+        margin-bottom: 200px;
+    }
+    .contact-right form
+{
+    width: 100%;
+}
+form input,form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2
+{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+    em
+    {
+        font-size: 20px;
+        margin-top: 20px;
+    }
     </style>
 <div id="header">
     <div class="container">
@@ -37,15 +81,16 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfoilo</a></li>
                 <li><a href="#contact">Contract</a></li>
-                <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Student of Bachelor's degree in digital technology and information</p>
-            <h1>Hello, I'm <span>Supakit Buadokmai</span><br>From <a href ="http://pim.ac.th">PIM EEC<a></h1>
-            <a class="Report" href="report.html">Link to Report</a>
+            <em>Student of Bachelor's degree in digital technology and information</em>
+            <em><br>Engineering and Technology</em>
+            <h1>Hello, I'm <span>Supakit Buadokmai</span><br>From PIM EEC</h1>
+            <li><a class="Report" href="report.html">Link to Report</a></li>
+            <li><a class="Contact" href="contact.html">Link to Contact.html</a></li>
         </div>
+        <hr>
     </div>
 </div>
 <!-- ------about------- -->
@@ -63,11 +108,10 @@
                     มีความสามารถในการรับแรงกดดันได้ดี “ หลังจากนี้เราไม่ได้มองตัวเองเป็นแค่พนักงาน แต่เรา ต้องเป็นเหมือนพาร์ตเนอร์ที่เข้าไปถามแบบเพื่อนว่า “คุณมีอะไรให้เราช่วยบ้าง” 
                     เพราะทุก การทำงาน เพื่อรองรับการขับเคลื่อนธุรกิจในโลกยุคดิจิทัลได้อย่างแท้จริง” </p>
                 <div class="tab-title">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
                 </div>
                 <div class="tab-contents active-tab" id="skills">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <ul>
                         <li><span>JAVA Pyton</span><br>Program Development</br></li>
                         <li><span>HTML CSS Javascript</span><br>Web Development</br></li>
@@ -75,6 +119,7 @@
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <ul>
                         <li><span>March 2022 - May 2022</span><br>
                             Internship AT 7-Eleven Bai Si Market (Bangsaen Saisi)</br></li>
@@ -82,6 +127,7 @@
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                     <ul>
                         <li><span>2021 - Current</span><br>Bachelor's degree in digital technology and information at Panyapiwat Institute of Management EEC CAMPUS</br></li>
                         <li><span>2017 - 2019</span><br>High school at Singsamut School</br></li>
