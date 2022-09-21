@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ab5d420f2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfoilo</a></li>
+                <li><a href="#contact">Contract</a></li>
+                <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student of Bachelor's degree in digital technology and information</p>
+            <h1>Hello, I'm <span>Supakit Buadokmai</span><br>From PIM EEC</h1>
+        </div>
+    </div>
+</div>
+<!-- ------about------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="User.png" alt="Supakit is working for Panyapiwat Institute of Management EEC Campus Student Club">
+            
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> สวัสดีครับผมชื่อศุภกิตติ์ บัวดอกไม้ หรือเรียกว่าโบ๊ทโบ๊ท ปัจจุบันกำลังศึกษาอยู่ที่สถาบันการจัดการปัญญาภิวัฒน์ วิทยาเขตอีอีซี 
+                    มีความชื่นชอบในการเขียนโค๊ดและมักจะเรียนรู้สิ่งใหม่ๆอยู่เสมอ เป็นคนมี Growth mindset ในด้านของการทำงานและการเข้าสังคม
+                    มีความสามารถในการรับแรงกดดันได้ดี “ หลังจากนี้เราไม่ได้มองตัวเองเป็นแค่พนักงาน แต่เรา ต้องเป็นเหมือนพาร์ตเนอร์ที่เข้าไปถามแบบเพื่อนว่า “คุณมีอะไรให้เราช่วยบ้าง” 
+                    เพราะทุก การทำงาน เพื่อรองรับการขับเคลื่อนธุรกิจในโลกยุคดิจิทัลได้อย่างแท้จริง” </p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>JAVA Pyton</span><br>Program Development</br></li>
+                        <li><span>HTML CSS Javascript</span><br>Web Development</br></li>
+                        <li><span>ChatBot</span><br>Building Line OA ChatBot with WebApp</br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>March 2022 - May 2022</span><br>
+                            Internship AT 7-Eleven Bai Si Market (Bangsaen Saisi)</br></li>
+                        <li><span>November 2021 - March 2022</span><br>Web Development at Est Serend Engineering Co.,Ltd.</br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Bachelor's degree in digital technology and information at Panyapiwat Institute of Management EEC CAMPUS</br></li>
+                        <li><span>2017 - 2019</span><br>High school at Singsamut School</br></li>
+                        <li><span>2005 - 2016</span><br>Junior high school at Bumrungsitsuksa School</br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- --------Works-------- -->
+<div id ="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Coding</h2>
+                <p>HTML CSS Javascript Python Java 
+                    <br>Development Web ,Program and 2D Game</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <h2>Video Editing</h2>
+                <p>สามารถตัดต่อคลิป VDO เช่น สื่อความรู้ Highlight</p>
+                <a href="https://www.youtube.com/channel/UCbMJIDvJlSev_-XLEldJTgA">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-windows"></i>
+                <h2>Adobe Photoshop & Basis Microsoft</h2>
+                <p>สามารถใช้งานโปรแกรม Adobe Photoshop ,Adobe Illustrator ,Microsoft Word,Microsoft Excel ,Microsoft Powerpoint etc.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------protfolio----- -->
+<div id="portfolio">
+    <div class="container">
+       <h1 class="sub-title">My Work</h1>
+       <div class="work-list">
+            <div class="work">
+                <img src="Allcaring.jpg" alt="Allcaring">
+                <div class="layer">
+                    <h3>All Caring</h3>
+                    <p>1st Prize : INNOVAION Form Hackathon U League for all 2022
+                        โครงการนวัตกรรมเทคโนโลยีเพื่อช่วยเหลือกลุ่มเปราะบาง จากโปรเจค All Caring แพลตฟอร์มที่ช่วยให้ญาติสามารถกายภาพบำบัดให้แก่ผู้ป่วยติดเตียงได้อย่างถูกต้องและเหมาะสมกับแต่ละบุคคล
+                    </p>
+                    <a href="https://www.thailandtimes.net/2022/09/depa-hackathon-u-league-for-all-2022.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="TIA_BOT Pharmacy.png" alt="Pharmacy">
+                <div class="layer">
+                    <h3>Bot Pharmacy</h3>
+                    <p>ผ่านการคัดเลือกเข้าร่วมการประกวดรางวัลนวัตกรรมแห่งประเทศไทย ครั้งที่ 22 2022โครงการ STEAM 4 INNOVATOR
+                    โปรเจค Bot Pharmacy แพลตฟอร์มที่ช่วยลดการแพร่ละบาดของเชื้อโรคเมื่อจำเป็นต้องใช้บริการร้านขายยาในชุมชน
+                    </p>
+                    <a href="https://line.me/R/ti/p/%40902uxpci"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Est.png" alt="HomePage Est Serend Engineering Co.,Ltd.">
+                <div class="layer">
+                    <h3>HomePage Est Serend Engineering Co.,Ltd.</h3>
+                    <p>พัฒนาเว็บไซต์ Homepage และเขียน Blog ให้กับบริษัท Est Serend Engineering Co.,Ltd.
+                        บริการงานตรวจสอบรับรองเครื่องจักรกลทุกประเภท อาทิ เครน/ปั้นจั่น (Crane), รถยก (Forklift), รถกระเช้าทุกชนิด, เครื่องจักรกลที่ใช้ในงานก่อสร้างทุกชนิด, รถขุด (Excavator), เครื่องตอกเสาเข็ม (Pile driver), รถเจาะเสาเข็ม (Pile drilling), รถตัก (Loader), รถบดอัด (Road roller), รถเกรด (Grader), รถแบคโฮ (Back hoe) เป็นต้น
+                    </p>
+                    <a href="https://est-serend-engineering-co-ltd.webflow.io/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+       </div>
+       <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -----contact----- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> ssboatss03@hotmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0889905652</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100004037014540"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/130fit/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Super Resume _ Reflect your talent and get a better job.pdf" download class="btn btn2">Dowload Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email"required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Thanks for Message</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ 130fit. Made for <i class="fa-solid fa-briefcase"></i> apply for work</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+  
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu()
+    {
+        sidemeu.style.right = "0";
+    }
+    function closemenu()
+    {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHKbeWVyqkYoX88D2UGuvlw_rNIZH0Wfcv_smj6xxK62U1P0w00ARJ7wqiXiMFNO0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent successfully"})
+        setTimeout(function()
+        {msg.innerHTML=""},5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
