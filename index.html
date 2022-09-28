@@ -5,72 +5,10 @@
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ab5d420f2f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <style type="text/css">
-        .img-circle {
-    width: 200px;
-        height: 200px;
-        border-radius: 100%;
-    }
-    body
-{
-    background: #080808;
-    color: #fff;
-}
-    .Report
-    {
-        font-size: 20px;
-        font-weight: 500;
-        color: #f004f0;
-        margin-bottom: 200px;
-    }
-    .Contact
-    {
-        font-size: 20px;
-        font-weight: 500;
-        color: #f00;
-        margin-bottom: 200px;
-    }
-    .contact-right form
-{
-    width: 100%;
-}
-form input,form textarea
-{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2
-{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.copyright
-{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
-    em
-    {
-        font-size: 20px;
-        margin-top: 20px;
-    }
-    </style>
 <div id="header">
     <div class="container">
         <nav>
@@ -81,24 +19,23 @@ form .btn2
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfoilo</a></li>
                 <li><a href="#contact">Contract</a></li>
+                <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <em>Student of Bachelor's degree in digital technology and information</em>
-            <em><br>Engineering and Technology</em>
+            <p>Student of Bachelor's degree in digital technology and information</p>
             <h1>Hello, I'm <span>Supakit Buadokmai</span><br>From PIM EEC</h1>
-            <li><a class="Report" href="report.html">Link to Report</a></li>
-            <li><a class="Contact" href="contact.html">Link to Contact.html</a></li>
         </div>
-        <hr>
     </div>
 </div>
+<hr class="s1">
 <!-- ------about------- -->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img class="img-circle" src="User.png" alt="Supakit is working for Panyapiwat Institute of Management EEC Campus Student Club">
+                <img src="User.png" alt="Supakit is working for Panyapiwat Institute of Management EEC Campus Student Club">
             
             </div>
             <div class="about-col-2">
@@ -108,18 +45,19 @@ form .btn2
                     มีความสามารถในการรับแรงกดดันได้ดี “ หลังจากนี้เราไม่ได้มองตัวเองเป็นแค่พนักงาน แต่เรา ต้องเป็นเหมือนพาร์ตเนอร์ที่เข้าไปถามแบบเพื่อนว่า “คุณมีอะไรให้เราช่วยบ้าง” 
                     เพราะทุก การทำงาน เพื่อรองรับการขับเคลื่อนธุรกิจในโลกยุคดิจิทัลได้อย่างแท้จริง” </p>
                 <div class="tab-title">
-
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <ul>
                         <li><span>JAVA Pyton</span><br>Program Development</br></li>
                         <li><span>HTML CSS Javascript</span><br>Web Development</br></li>
                         <li><span>ChatBot</span><br>Building Line OA ChatBot with WebApp</br></li>
+                        <li><span>Coding</span><br>Code with Visual Studio <Code></Code></li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <ul>
                         <li><span>March 2022 - May 2022</span><br>
                             Internship AT 7-Eleven Bai Si Market (Bangsaen Saisi)</br></li>
@@ -127,7 +65,6 @@ form .btn2
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
                     <ul>
                         <li><span>2021 - Current</span><br>Bachelor's degree in digital technology and information at Panyapiwat Institute of Management EEC CAMPUS</br></li>
                         <li><span>2017 - 2019</span><br>High school at Singsamut School</br></li>
@@ -170,6 +107,7 @@ form .btn2
        <h1 class="sub-title">My Work</h1>
        <div class="work-list">
             <div class="work">
+                <img src="Allcaring.jpg" alt="Allcaring">
                 <div class="layer">
                     <h3>All Caring</h3>
                     <p>1st Prize : INNOVAION Form Hackathon U League for all 2022
@@ -179,6 +117,7 @@ form .btn2
                 </div>
             </div>
             <div class="work">
+                <img src="TIA_BOT Pharmacy.png" alt="Pharmacy">
                 <div class="layer">
                     <h3>Bot Pharmacy</h3>
                     <p>ผ่านการคัดเลือกเข้าร่วมการประกวดรางวัลนวัตกรรมแห่งประเทศไทย ครั้งที่ 22 2022โครงการ STEAM 4 INNOVATOR
@@ -188,6 +127,7 @@ form .btn2
                 </div>
             </div>
             <div class="work">
+                <img src="Est.png" alt="HomePage Est Serend Engineering Co.,Ltd.">
                 <div class="layer">
                     <h3>HomePage Est Serend Engineering Co.,Ltd.</h3>
                     <p>พัฒนาเว็บไซต์ Homepage และเขียน Blog ให้กับบริษัท Est Serend Engineering Co.,Ltd.
@@ -206,8 +146,8 @@ form .btn2
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> 6452101005@stu.pim.ac.th</p>
-                <p><i class="fa-solid fa-phone"></i> 088990xxxxxx</p>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> ssboatss03@hotmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0889905652</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/profile.php?id=100004037014540"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/130fit/"><i class="fa-brands fa-instagram"></i></a>
